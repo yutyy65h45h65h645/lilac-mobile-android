@@ -43,7 +43,7 @@ jobs:
       - name: Write the Lilac signing key
         env:
           LILAC_KEYSTORE: ${{ secrets.LILAC_KEYSTORE }}
-        run: echo "$LILAC_KEYSTORE" | base64 -d > app_pojavlauncher/lilac-release.jks
+        run: printf '%s' "$LILAC_KEYSTORE" | tr -d '\r\n ' | base64 -d > app_pojavlauncher/lilac-release.jks
 
       - name: Build release APK
         env:
