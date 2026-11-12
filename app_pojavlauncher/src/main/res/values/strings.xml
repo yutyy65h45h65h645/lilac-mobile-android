@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_name" translatable="false">Amethyst</string>
+    <string name="app_name" translatable="false">Lilac</string>
+    <string name="lilac_setup_progress" translatable="false">Setting up Lilac</string>
+    <string name="lilac_setup_downloading" translatable="false">Downloading %s</string>
+    <string name="lilac_setup_failed" translatable="false">Could not update Lilac. Check your connection; your current Lilac still works.</string>
 
     <!-- Action bar part -->
 

@@ -341,6 +341,7 @@ public class LauncherActivity extends BaseActivity {
         new AsyncVersionList().getVersionList(versions -> ExtraCore.setValue(ExtraConstants.RELEASE_TABLE, versions), false);
 
         mInstallTracker = new ModloaderInstallTracker(this);
+        net.kdt.pojavlaunch.lilac.LilacSetup.start(this);
 
         mProgressLayout.observe(ProgressLayout.DOWNLOAD_MINECRAFT);
         mProgressLayout.observe(ProgressLayout.UNPACK_RUNTIME);
